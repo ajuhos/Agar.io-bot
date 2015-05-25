@@ -820,6 +820,7 @@ jQuery('#region').change(function () {
                 
                 biggestCluster[0] = 1000;
                 biggestCluster[1] = 1000;
+                biggestCluster[2] = 100000000;
                 
                 /**
                  * #1 Get a list of all the food.
@@ -828,7 +829,7 @@ jQuery('#region').change(function () {
                  * #4 Find closest food after the filter.
                  */
                 
-                if (closestNiceViruse != null && closestNiceViruse[0].size * 1.15 <= m[0].size) {
+                if (false && closestNiceViruse != null && closestNiceViruse[0].size * 1.15 <= m[0].size) {
                     for (var i = 0; i < m.length; i++) {
                         drawLine(m[i].ox, m[i].oy, closestNiceViruse[0].x, closestNiceViruse[0].y, 5);
                     }
