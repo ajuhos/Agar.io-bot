@@ -748,11 +748,13 @@ jQuery('#region').change(function () {
                 
                 //allFallbackPoints.push([offsetEscapeX, offsetEscapeY]);
                 
-                if(offsetEscapeLeftX > 100 && offsetEscapeLeftX < 9900 && offsetEscapeLeftY > 100 && offsetEscapeLeftY < 9900 &&
-                   offsetEscapeRightX > 100 && offsetEscapeRightX < 9900 && offsetEscapeRightY > 100 && offsetEscapeRightY < 9900) {
+                if(offsetEscapeLeftX > 100 && offsetEscapeLeftX < 9900 && offsetEscapeLeftY > 100 && offsetEscapeLeftY < 9900
+                ) {
                 	allFallbackPointsLeft.push([offsetEscapeLeftX, offsetEscapeLeftY]);
+                }
                 
-                
+                if(   offsetEscapeRightX > 100 && offsetEscapeRightX < 9900 && offsetEscapeRightY > 100 && offsetEscapeRightY < 9900)
+
                 	allFallbackPointsRight.push([offsetEscapeRightX, offsetEscapeRightY]);
                 //allFallbackPoints.push([offsetEscapeRightX, offsetEscapeRightY]);
                 
@@ -762,7 +764,7 @@ jQuery('#region').change(function () {
                 allFallbackCount.push(0);
                 //allFallbackCount.push(0);
                 
-                   }
+                   
                 
                 var badSide = isSideLine(threatLine[0], threatLine[1], [allPossibleThreats[i].x, allPossibleThreats[i].y]);
                 
