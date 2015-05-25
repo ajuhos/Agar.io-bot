@@ -988,6 +988,7 @@ jQuery('#region').change(function () {
          
         
         if (!toggle) {
+        	console.log("MOVE", tempMoveX, tempMoveY);
             P = tempMoveX;
             Q = tempMoveY;
         }
