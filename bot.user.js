@@ -818,6 +818,9 @@ jQuery('#region').change(function () {
                     }
                 }
                 
+                biggestCluster[0] = 1000;
+                biggestCluster[1] = 1000;
+                
                 /**
                  * #1 Get a list of all the food.
                  * #2 Get a list of all the threats.
