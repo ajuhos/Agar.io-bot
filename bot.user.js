@@ -748,13 +748,11 @@ jQuery('#region').change(function () {
                 
                 //allFallbackPoints.push([offsetEscapeX, offsetEscapeY]);
                 
-                if(offsetEscapeLeftX > 100 && offsetEscapeLeftX < 9900 && offsetEscapeLeftY > 100 && offsetEscapeLeftY < 9900
-                ) {
+             
                 	allFallbackPointsLeft.push([offsetEscapeLeftX, offsetEscapeLeftY]);
-                }
                 
-                if(   offsetEscapeRightX > 100 && offsetEscapeRightX < 9900 && offsetEscapeRightY > 100 && offsetEscapeRightY < 9900)
-
+                
+        
                 	allFallbackPointsRight.push([offsetEscapeRightX, offsetEscapeRightY]);
                 //allFallbackPoints.push([offsetEscapeRightX, offsetEscapeRightY]);
                 
@@ -975,6 +973,19 @@ jQuery('#region').change(function () {
             drawPoint(tempPoint[0], tempPoint[1], tempPoint[2]);
             tempPoint[2] = 1;
         }
+        
+        if(tempMoveX < 1000)
+         tempMoveX = 2000;
+         
+         if(tempMoveX > 9000)
+        tempMoveX = 8000;
+        
+        if(tempMoveY < 1000)
+         tempMoveY = 2000;
+         
+         if(tempMoveY > 9000)
+        tempMoveY = 8000;
+         
         
         if (!toggle) {
             P = tempMoveX;
