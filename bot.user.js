@@ -818,8 +818,8 @@ jQuery('#region').change(function () {
                     }
                 }
                 
-                biggestCluster[0] = 1000;
-                biggestCluster[1] = 1000;
+                biggestCluster[0] = 5000;
+                biggestCluster[1] = 5000;
                 biggestCluster[2] = 100000000;
                 
                 /**
